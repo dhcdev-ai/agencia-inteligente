@@ -63,7 +63,7 @@ Este projeto é um convite à colaboração. A ideia é que ele evolua com o fee
 
 # SOBRE O PROJETO
 
-##Funções dos Agentes
+## Funções dos Agentes
 
 As seguintes funções definem a lógica de cada "agente de IA":
 
@@ -76,18 +76,20 @@ As seguintes funções definem a lógica de cada "agente de IA":
 
 ##Cada função:
 
-Recebe dados de entrada específicos para sua tarefa.
-Constrói um prompt para o Gemini, descrevendo a tarefa e o formato de saída desejado.
-Chama a API do Gemini para gerar uma resposta.
-Analisa a resposta do Gemini para extrair as informações relevantes (em formato de dicionário Python ou outro formato estruturado).
-Retorna as informações extraídas.
+* Recebe dados de entrada específicos para sua tarefa.
+* Constrói um prompt para o Gemini, descrevendo a tarefa e o formato de saída desejado.
+* Chama a API do Gemini para gerar uma resposta.
+* Analisa a resposta do Gemini para extrair as informações relevantes (em formato de dicionário Python ou outro formato estruturado).
+* Retorna as informações extraídas.
+
 Importante:
-Qualidade dos Prompts: A eficácia dos agentes depende da qualidade e do detalhamento dos prompts. Experimente e refine os prompts para obter os resultados desejados.
-Análise da Resposta do Gemini: A API do Gemini retorna texto. Você precisará analisar esse texto para extrair as informações estruturadas. O código inclui placeholders e comentários explicando onde implementar essa lógica.
-Tratamento de Erros: Cada função inclui tratamento de erros para lidar com problemas na API do Gemini ou em outras partes do código.
-Modelo Gemini: Todas as funções verificam se o modelo Gemini foi inicializado corretamente (if model is None:) para evitar erros caso a chave da API não tenha sido configurada corretamente.
-Fluxo de Trabalho de Exemplo
-Esta célula simula um fluxo de trabalho típico de gerenciamento de projetos, demonstrando como os agentes podem ser usados em conjunto:
+
+* Qualidade dos Prompts: A eficácia dos agentes depende da qualidade e do detalhamento dos prompts. Será necessário refinar os prompts para obter os resultados desejados.
+* Análise da Resposta do Gemini: A API do Gemini retorna texto. Será necessário analisar esse texto para extrair as informações estruturadas. O código inclui placeholders e comentários explicando onde implementar essa lógica.
+* Tratamento de Erros: Cada função inclui tratamento de erros para lidar com problemas na API do Gemini ou em outras partes do código.
+* Modelo Gemini: Todas as funções verificam se o modelo Gemini foi inicializado corretamente (if model is None:) para evitar erros caso a chave da API não tenha sido configurada corretamente.
+
+* Fluxo de Trabalho de Exemplo; A partir da **célula 9** é simulado o fluxo de trabalho dos agentes, iniciando pelo fluxo de trabalho típico do gerenciamento de projetos, demonstrando como os agentes podem ser usados em conjunto:
 
 ## Fluxo de trabalho
 
