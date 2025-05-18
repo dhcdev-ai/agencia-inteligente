@@ -67,12 +67,12 @@ Este projeto é um convite à colaboração. A ideia é que ele evolua com o fee
 
 As seguintes funções definem a lógica de cada "agente de IA":
 
-**`rodar_agente_insight_cliente(texto_briefing)`**: Extrai informações de um briefing do cliente usando Gemini.
-**`rodar_agente_planejador_estrategico(briefing_estruturado, personas_equipe, prazo_macro)`**: Cria um plano de projeto inicial usando Gemini.
-**`rodar_agente_facilitador_criativo(briefing, tipo_tarefa, descricao_tarefa)`**: Auxilia na criação de conteúdo ou design usando Gemini.
-**`rodar_agente_guardiao_do_escopo(escopo_original, solicitacao_alteracao)`**: Analisa o impacto de uma solicitação de alteração no escopo do projeto.
-**`rodar_agente_comunicador_proativo(tipo_comunicacao, detalhes)`**: Gera rascunhos de comunicações (e-mails, pautas, resumos) usando Gemini.
-**`rodar_agente_verificador_tecnico(duvida_tecnica)`**: Responde a dúvidas técnicas usando Gemini e pesquisa na web.
+1.  **`rodar_agente_insight_cliente(texto_briefing)`**: Extrai informações de um briefing do cliente usando Gemini.
+2.  **`rodar_agente_planejador_estrategico(briefing_estruturado, personas_equipe, prazo_macro)`**: Cria um plano de projeto inicial usando Gemini.
+3.  **`rodar_agente_facilitador_criativo(briefing, tipo_tarefa, descricao_tarefa)`**: Auxilia na criação de conteúdo ou design usando Gemini.
+4.  **`rodar_agente_guardiao_do_escopo(escopo_original, solicitacao_alteracao)`**: Analisa o impacto de uma solicitação de alteração no escopo do projeto.
+5.  **`rodar_agente_comunicador_proativo(tipo_comunicacao, detalhes)`**: Gera rascunhos de comunicações (e-mails, pautas, resumos) usando Gemini.
+6.  **`rodar_agente_verificador_tecnico(duvida_tecnica)`**: Responde a dúvidas técnicas usando Gemini e pesquisa na web.
 
 ##Cada função:
 
