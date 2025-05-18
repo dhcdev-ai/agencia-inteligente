@@ -60,3 +60,35 @@ Este projeto é um convite à colaboração. A ideia é que ele evolua com o fee
 **Junte-se a nós nesta jornada para transformar a maneira como entregamos resultados extraordinários aos nossos clientes e elevamos o padrão da nossa agência!**
 
 ---
+
+## Fluxo de trabalho
+
+O fluxo de trabalho de exemplo demonstra como os agentes podem ser usados para:
+
+Extrair informações de um briefing do cliente (AIC).
+Criar um plano de projeto inicial (APE).
+Gerar rascunhos de e-mails (ACP).
+Responder a dúvidas técnicas (AVT).
+Analisar o impacto de uma solicitação de alteração (AGE).
+
+## Observação:
+
+Este é apenas um exemplo simplificado. Em um cenário real, o fluxo de trabalho seria mais complexo e envolveria a interação de vários agentes e a análise das saídas dos agentes para tomar decisões informadas.
+O código usa input() para solicitar informações do usuário. Em um sistema mais avançado, você usaria uma interface de usuário mais amigável (por exemplo, com ipywidgets).
+
+**Considerações Importantes**
+
+Segurança: Ao usar as APIs do Google, tome cuidado com a privacidade dos dados do usuário. Solicite apenas as permissões necessárias e armazene os dados com segurança.
+Custos: O uso das APIs do Google (especialmente Gemini e a API de pesquisa) pode ter custos associados, dependendo do volume de uso. Consulte a documentação das APIs para obter mais informações sobre preços.
+Qualidade dos Dados: A qualidade das saídas dos agentes depende da qualidade dos dados de entrada. Certifique-se de fornecer informações claras e precisas aos agentes.
+"Human in the Loop": Os agentes de IA são apenas assistentes. Sempre revise e valide as saídas dos agentes antes de tomar decisões.
+
+**Próximos Passos**
+
+- Refinação dos prompts dos agentes para obter melhores resultados.
+- Implementação a análise das respostas do Gemini para extrair informações estruturadas.
+- Integração com as APIs do Google Workspace (Drive, Calendar, Gmail) para automatizar tarefas.
+- Criação de uma interface de usuário mais amigável.
+- Implementação de um sistema para gerenciar o estado do projeto (por exemplo, usando o Google Sheets).
+
+Este documento fornece uma visão geral do código dpoderá ser criado um sistema de IA que realmente transforme a forma como sua agência trabalha.
