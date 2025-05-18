@@ -61,6 +61,34 @@ Este projeto é um convite à colaboração. A ideia é que ele evolua com o fee
 
 ---
 
+# SOBRE O PROJETO
+
+##Funções dos Agentes
+
+As seguintes funções definem a lógica de cada "agente de IA":
+
+**`rodar_agente_insight_cliente(texto_briefing)`**: Extrai informações de um briefing do cliente usando Gemini.
+**`rodar_agente_planejador_estrategico(briefing_estruturado, personas_equipe, prazo_macro)`**: Cria um plano de projeto inicial usando Gemini.
+**`rodar_agente_facilitador_criativo(briefing, tipo_tarefa, descricao_tarefa)`**: Auxilia na criação de conteúdo ou design usando Gemini.
+**`rodar_agente_guardiao_do_escopo(escopo_original, solicitacao_alteracao)`**: Analisa o impacto de uma solicitação de alteração no escopo do projeto.
+**`rodar_agente_comunicador_proativo(tipo_comunicacao, detalhes)`**: Gera rascunhos de comunicações (e-mails, pautas, resumos) usando Gemini.
+**`rodar_agente_verificador_tecnico(duvida_tecnica)`**: Responde a dúvidas técnicas usando Gemini e pesquisa na web.
+
+##Cada função:
+
+Recebe dados de entrada específicos para sua tarefa.
+Constrói um prompt para o Gemini, descrevendo a tarefa e o formato de saída desejado.
+Chama a API do Gemini para gerar uma resposta.
+Analisa a resposta do Gemini para extrair as informações relevantes (em formato de dicionário Python ou outro formato estruturado).
+Retorna as informações extraídas.
+Importante:
+Qualidade dos Prompts: A eficácia dos agentes depende da qualidade e do detalhamento dos prompts. Experimente e refine os prompts para obter os resultados desejados.
+Análise da Resposta do Gemini: A API do Gemini retorna texto. Você precisará analisar esse texto para extrair as informações estruturadas. O código inclui placeholders e comentários explicando onde implementar essa lógica.
+Tratamento de Erros: Cada função inclui tratamento de erros para lidar com problemas na API do Gemini ou em outras partes do código.
+Modelo Gemini: Todas as funções verificam se o modelo Gemini foi inicializado corretamente (if model is None:) para evitar erros caso a chave da API não tenha sido configurada corretamente.
+Fluxo de Trabalho de Exemplo
+Esta célula simula um fluxo de trabalho típico de gerenciamento de projetos, demonstrando como os agentes podem ser usados em conjunto:
+
 ## Fluxo de trabalho
 
 O fluxo de trabalho de exemplo demonstra como os agentes podem ser usados para:
