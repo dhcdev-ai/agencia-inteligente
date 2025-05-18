@@ -74,7 +74,7 @@ As seguintes funções definem a lógica de cada "agente de IA":
 5.  **`rodar_agente_comunicador_proativo(tipo_comunicacao, detalhes)`**: Gera rascunhos de comunicações (e-mails, pautas, resumos) usando Gemini.
 6.  **`rodar_agente_verificador_tecnico(duvida_tecnica)`**: Responde a dúvidas técnicas usando Gemini e pesquisa na web.
 
-##Cada função:
+## Cada função:
 
 * Recebe dados de entrada específicos para sua tarefa.
 * Constrói um prompt para o Gemini, descrevendo a tarefa e o formato de saída desejado.
